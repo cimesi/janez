@@ -1,0 +1,22 @@
+baseURL = "http://janez2.cime.si/"
+languageCode = "en-us"
+title = "Janez Cimerman"
+theme = "hugo-notepadium"
+copyright = "©2020 Janez Cimerman."
+
+enableRobotsTXT = false
+
+[params]
+style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+# dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
+logo = "logo.png"  # if you have a logo png
+slogan = "Projects log"
+license = ""  # CC License
+
+[params.nav]
+showCategories = false       # /categories/
+showTags = true             # /tags/
+
+[[params.nav.custom]]
+title = "About"
+url = "/about"
