@@ -1,4 +1,4 @@
-baseURL = "http://janez2.cime.si/"
+baseURL = "https://janez2.cime.si/"
 languageCode = "en-us"
 title = "Janez Cimerman"
 theme = "hugo-notepadium"
