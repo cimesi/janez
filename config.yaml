@@ -1,0 +1,42 @@
+---
+
+baseURL: https://janez2.cime.si/
+languageCode: en-us
+title: Janez Cimerman
+theme: 
+  - vanilla-bootstrap-hugo-theme
+copyright: ©2020 Janez Cimerman.
+
+enableRobotsTXT: false
+
+menu:
+  nav:
+  - name: Home
+    pre: home
+    url: /
+    weight: 1
+  - name: Project log
+    pre: edit
+    url: /post/
+    weight: 2
+  - name: Tags
+    pre: tag
+    url: /tags/
+    weight: 3
+  - name: About
+    pre: smile
+    url: /about/
+    weight: 4
+
+params:
+  style: light
+  dateFormat: "2006-01-02"
+#   logo: logo.png  # if you have a logo png
+#   slogan: Projects log
+#   license: ""  # CC License
+#   nav:
+#     showCategories: false       # /categories/
+#     showTags: true             # /tags/
+#     custom:
+#       title: "About"
+#       url: "/about"
