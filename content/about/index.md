@@ -1,9 +1,8 @@
 ---
-title: "About me"
-draft: false
+title: About me
+draft: 'false'
 ---
-
-![](/me.jpg " ")
+![me](/me.jpg "me")
 
 My moto is: `Eat, sleep, make, repeat`. My main drive is gather knowledge and building any kind of mechanical device which can help other people.
 
