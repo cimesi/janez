@@ -4,7 +4,7 @@ baseURL: https://janez2.cime.si/
 languageCode: en-us
 title: Janez Cimerman
 theme: 
-  - vanilla-bootstrap-hugo-theme
+  - vanilla-bootstrap
 copyright: ©2020 Janez Cimerman.
 
 enableRobotsTXT: false
