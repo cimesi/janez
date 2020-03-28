@@ -15,10 +15,6 @@ menu:
     pre: home
     url: /
     weight: 1
-  - name: Project log
-    pre: edit
-    url: /post/
-    weight: 2
   # - name: Tags
   #   pre: tag
   #   url: /tags/
@@ -33,11 +29,15 @@ menu:
     weight: 5
 
 params:
-  style: light
+  homePicture: logo_transparent.png
+  backgroundPicture: nasaEarth.jpg
+  style: dark
   dateFormat: "2006-01-02"
   homeText: Eat sleap make repeat.
-  footerText: Copyright JanezCimerman 2020. Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
+  footerText: 2020 JanezCimerman. Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
   hideFooter: false
+  mainSections:
+    - post
 #   logo: logo.png  # if you have a logo png
 #   slogan: Projects log
 #   license: ""  # CC License
