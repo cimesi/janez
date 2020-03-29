@@ -1,4 +1,4 @@
-REGISTRY = cimesi/janez:latest
+REGISTRY = cimesi/janez:0.2
 
 run:
 	hugo server

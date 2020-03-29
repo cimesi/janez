@@ -10,20 +10,18 @@
 {{ end }}
 </div>
 
-<div id="home-picture">
-	<a href="/about">
-		<img src="{{ .Site.Params.homePicture }}" alt="{{ .Site.Title }}">
-	</a>
-	</br>
-	{{ $icon := printf "<i data-feather=\"%s\"></i>" "chevron-down" }}
-    {{ $text := print $icon " " "" | safeHTML }}
-    <a id="chevron-down-image" href="#main-sections">{{ $text }}</a>
-</div>
+{{ partial "home-picture.html" . }}
+
+{{ partial "chevron.html" . }}
+
+{{ partial "static-search.html" . }}
+
+<br/>
 
 <div id="main-sections">
 {{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ range $posts.ByPublishDate.Reverse }}
-<p>
+<p class="post">
   <a class="font-125" href="{{ .Permalink }}">{{ .Title }}</a>
   <br>
   {{ partial "date-and-tags.html" . }}
