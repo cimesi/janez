@@ -5,7 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchResultElement = document.querySelector("#main-sections");
     const posts = document.querySelectorAll(".post");
 
-    axios.get("/search")
+    axios.get(
+        window.location.protocol + "//" +
+        window.location.hostname +
+        (window.location.port ? ":" + window.location.port : "") +
+        "/search/")
         .then(function (result) {
             const searchContent = result.data;
             const searchIndex = lunr(function () {
