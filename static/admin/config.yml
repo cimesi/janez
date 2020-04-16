@@ -23,9 +23,9 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Cover photo", name: "cover", widget: "image"}
-      - {label: "Draft", name: "draft", widget: "string", default: "true"}
+      - {label: "Draft", name: "draft", widget: "string", default: "false"}
       # - {label: "Categories", name: "categories", required: false, widget: "list"}
-      # - {label: "Tags", name: "tags", required: false, widget: "list"}
+      - {label: "Tags", name: "tags", required: false, widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: about
     label: About

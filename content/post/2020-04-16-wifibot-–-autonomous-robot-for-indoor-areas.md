@@ -3,6 +3,7 @@ layout: blog
 title: WiFiBot – autonomous robot for indoor areas
 date: 2017-01-27T21:29:31.851Z
 cover: /images/uploads/20161213_110406-1024x576.jpg
+tags: []
 draft: In January 2017 we made a self-driving, ROS based robot for the company
   Plume. It autonomously checks the WiFi coverage in indoor areas.
 ---
