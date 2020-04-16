@@ -1,5 +1,4 @@
 <style>
-
 body {
   background-color: #000;
   background-image: url('/{{ .Site.Params.backgroundPicture }}');
@@ -7,13 +6,10 @@ body {
   background-repeat: no-repeat;
   {{ if .IsHome }}background-position-y: -100%;{{ end }}
 }
-
 .container {
   max-width: {{ .Site.Params.containerMaxWidth | default "700px" | safeCSS }};
 }
-#home-picture {
-  text-align: center;
-}
+/* Bounding box for posts on frontpage */
 #main-sections p {
   background-color: #000;
   border: 1px solid black;
@@ -21,9 +17,23 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+#search input{
+  width: 50%;
+  font-family: inherit;
+  border: 0;
+  border-bottom: 2px solid grey;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
 #chevron-down-image svg{
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 #nav a {
   font-weight: bold;

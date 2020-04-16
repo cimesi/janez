@@ -1,0 +1,23 @@
+{{- $.Scratch.Add "index" slice -}}
+
+{{- $searchablePages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+
+{{- range $page := $searchablePages -}}
+  {{- .Scratch.Set "pageData" "" -}}
+  {{- .Scratch.Set "pageContent" "" -}}
+  {{- .Scratch.Set "pageDescription" "" -}}
+  {{- .Scratch.Set "pageURL" "" -}}
+  {{- .Scratch.Set "pageTags" "" -}}
+
+  {{- if gt (len (default "" $page.Content)) 0 -}}
+    {{- .Scratch.Set "pageContent" $page.Plain -}}
+    {{- .Scratch.Set "pageURL" $page.Permalink -}}
+    {{- .Scratch.Set "pageTags" (delimit $page.Params.tags " ") -}}
+    {{- .Scratch.Set "pageDescription" $page.Description -}}
+    {{- .Scratch.Set "pageData" (dict "title" $page.Title "url" (.Scratch.Get "pageURL") "description" (.Scratch.Get "pageDescription") "content" (.Scratch.Get "pageContent") "tags" (.Scratch.Get "pageTags") ) -}}
+    {{- $.Scratch.Add "index" (.Scratch.Get "pageData") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $.Scratch.Get "index" | jsonify -}}
+

@@ -1,0 +1,14 @@
+---
+
+build:
+  image: alpine:latest
+  before_script:
+    - apk update 
+    - apk add make hugo docker
+  script:
+    - make public
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+ 

@@ -47,3 +47,10 @@ params:
 #     custom:
 #       title: "About"
 #       url: "/about"
+
+outputs:
+  home:
+    - HTML
+    - JSON
+  page:
+    - HTML
