@@ -1,19 +1,17 @@
 ---
 title: About me
-draft: 'false'
+draft: .
 ---
-![me](/me.jpg "me")
+Some notable bacground:
 
-My moto is: `Eat, sleep, make, repeat`. My main drive is gather knowledge and building any kind of mechanical device which can help other people.
+* Cofounder of TAFR student team 
+* Ex lead of MakerLab Ljubljana 
+* An overall stand up guy :)
 
-## Hobies:
+Tecnical Expertise:
 
-* ROS, Python developer
-* Arduino and Python mentour
-* Student of electrical engineering Ljubljana
-* Passionate maker
-
-## A lot of working experience with:
-
-* autonomous robots
-* 3D tech
+* Highly experienced with ROS and it’s simulation tools
+* Over 6 year work experience with autonomous robots (localisation and navigation algorithms
+* C++, Python, GIT
+* Fusion360, Blender, SolidWorks
+* CNC and 3D printer construction and usage experience
