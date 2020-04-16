@@ -1,6 +1,6 @@
 ---
 title: About me
-draft: .
+draft: .nan
 ---
 Some notable bacground:
 
@@ -15,3 +15,7 @@ Tecnical Expertise:
 * C++, Python, GIT
 * Fusion360, Blender, SolidWorks
 * CNC and 3D printer construction and usage experience
+
+
+
+More on LinkedIn: https://www.linkedin.com/in/janez-cimerman-935305b1/
