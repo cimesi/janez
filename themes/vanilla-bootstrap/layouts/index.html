@@ -5,16 +5,13 @@
   <h1>{{ $.Page.Title }}</h1>
   {{ . }}
 {{ else }}
-  <h1>{{ .Site.Title }}</h1>
   <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
 {{ end }}
 </div>
 
-{{ partial "home-picture.html" . }}
+{{ partial "static-search.html" . }}
 
 {{ partial "chevron.html" . }}
-
-{{ partial "static-search.html" . }}
 
 <br/>
 
