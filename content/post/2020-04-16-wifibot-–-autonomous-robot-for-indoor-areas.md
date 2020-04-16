@@ -12,4 +12,4 @@ In September 2016 we started a project named WiFiBot in collaboration with LTFE[
 
 The robot is running on ROS (Robot operating system), **uses Hector SLAM to first scan and save the map of the apartment** and AMCL package to then accurately navigate across it.
 
-https://www.youtube.com/watch?v=Dx-gcD04toE&feature=emb_title
+{{< youtube Dx-gcD04toE >}}
