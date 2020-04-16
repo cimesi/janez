@@ -1,14 +1,8 @@
 ---
 
 build:
-  image: alpine:latest
-  before_script:
-    - apk update 
-    - apk add make hugo docker
+  image: cimesi/janez:builder
   script:
-    - make public
-  artifacts:
-    paths:
-      - public
-    expire_in: 1 week
- 
+    - make build
+    - docker login --password $REGISTRY_PASSWORD --username $REGISTRY_USERNAME
+    - make push

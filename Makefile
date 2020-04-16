@@ -6,12 +6,8 @@ run:
 run/container:
 	docker run -it --rm -p 8000:80 ${REGISTRY}
 
-build: public container
-
-public:
+build:
 	hugo
-
-container:
 	docker build -t ${REGISTRY} .
 
 push:
