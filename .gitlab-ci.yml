@@ -2,6 +2,8 @@
 
 build:
   image: cimesi/janez:builder
+  variables:
+    NOMAD_ADDR: http://10.0.19.241:4646
   script:
     - make build
     - docker login --password $REGISTRY_PASSWORD --username $REGISTRY_USERNAME
