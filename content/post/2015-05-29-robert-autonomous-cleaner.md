@@ -1,13 +1,13 @@
 ---
-title: "Robert - autonomous cleaner"
-date: 2015-05-29T14:40:11+01:00
-draft: false
+title: 2nd place in student challange with hacked Kärcher push-broom (Robert)
+date: 2015-05-29T13:40:11.000Z
 cover: /robert1.png
+draft: The goal of this project was to take a normal Kärcher push-broom and hack
+  it into an autonomous cleaning robot.
 tags:
   - robotics
 ---
-
-Robert is a smart cleaning robot, which works very differently from any other today. With the help of a camera, embedded in his surroundings (web , security, baby camera,…), Robert can navigate himself and clean dirty surfaces with unparalleled accuracy and speed.
+Robert is a smart cleaning robot, which cleans by autonomously navigating using a celing mounted camera.
 
 ![](/robert2.png " ")
 
@@ -31,6 +31,4 @@ Here is how Robert sees himself on cameras:
 
 With this robot I already won some student competitions, biggest one being Cosylab IEEE competition:
 
-![](/robert6.jpg " ")
-![](/robert7.png " ")
-
+![](/robert6.jpg " ") ![](/robert7.png " ")
