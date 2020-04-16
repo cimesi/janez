@@ -1,0 +1,9 @@
+FROM alpine:latest
+
+ENV NOMAD_VERSION=0.11.0 \
+    NOMAD_SHA256=cd76c59af28757ee916811baf92c2ea8daa9125052f76ebb21daf5e10ef2db21
+
+RUN apk update && apk add make hugo docker bash curl ca-certificates wget && rm -rf /var/cache/apk/*
+RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub && wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.28-r0/glibc-2.28-r0.apk && apk add glibc-2.28-r0.apk
+RUN curl https://releases.hashicorp.com/nomad/${NOMAD_VERSION}/nomad_${NOMAD_VERSION}_linux_amd64.zip -o nomad_${NOMAD_VERSION}_linux_amd64.zip && echo "${NOMAD_SHA256}  nomad_${NOMAD_VERSION}_linux_amd64.zip" | sha256sum -c -
+RUN unzip nomad_${NOMAD_VERSION}_linux_amd64.zip && mv nomad /usr/local/bin/nomad
