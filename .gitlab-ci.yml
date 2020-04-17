@@ -8,4 +8,5 @@ build:
     - make build
     - docker login --password $REGISTRY_PASSWORD --username $REGISTRY_USERNAME
     - make push
+    - sed -i -e "s/^# timestamp/$(date)/g" janez.nomad
     - nomad job run janez.nomad

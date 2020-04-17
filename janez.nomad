@@ -28,6 +28,13 @@ job "janez" {
         image = "docker.io/cimesi/janez"
       }
 
+      template {
+        data = <<EOH
+# timestamp
+        EOH
+        destination = "local/file.yml"
+      }
+
       config {
         port_map = {
           http = 80
