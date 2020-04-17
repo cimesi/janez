@@ -8,6 +8,6 @@ draft: With TAFR group we competed on European competition Field Robot Event and
 tags:
   - tafr
 ---
-
+With TAFR group we competed on European competition Field Robot Event and were 1st in the Weeding Task and 3rd overall!
 
 ![](/images/uploads/black.png)
