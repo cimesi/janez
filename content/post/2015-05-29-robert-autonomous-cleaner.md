@@ -2,11 +2,12 @@
 title: 2nd place in student challange with hacked Kärcher push-broom (Robert)
 date: 2015-05-29T13:40:11.000Z
 cover: /robert1.png
-draft: The goal of this project was to take a normal Kärcher push-broom and hack
-  it into an autonomous cleaning robot.
+draft: "false"
 tags:
   - robotics
 ---
+The goal of this project was to take a normal Kärcher push-broom and hack it into an autonomous cleaning robot.
+
 Robert is a smart cleaning robot, which cleans by autonomously navigating using a celing mounted camera.
 
 ![](/robert2.png " ")
