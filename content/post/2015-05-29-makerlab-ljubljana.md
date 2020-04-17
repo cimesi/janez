@@ -1,8 +1,8 @@
 ---
-title: "MakerLab Ljubljana"
-date: 2015-05-29T14:41:11+01:00
-draft: false
+title: MakerLab Ljubljana
+date: 2015-05-29T13:41:11.000Z
 cover: /makerlab1.png
+draft: "false"
 tags:
   - makerlab
 ---
