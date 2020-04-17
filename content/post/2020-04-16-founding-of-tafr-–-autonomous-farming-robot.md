@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: Founding of TAFR – autonomous farming robot
 date: 2017-02-09T21:35:21.031Z
 cover: /images/uploads/black.png

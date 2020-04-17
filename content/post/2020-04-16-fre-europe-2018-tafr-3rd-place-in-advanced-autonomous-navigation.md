@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: "FRE Europe 2018: TAFR 3rd place in Advanced autonomous navigation"
 date: 2018-06-13T20:48:22.026Z
 cover: /images/uploads/black.png
