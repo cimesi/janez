@@ -8,4 +8,8 @@ tags:
 ---
 With TAFR group we competed on European competition Field Robot Event and were 1st in the Weeding Task and 3rd overall!
 
+
+
+More here: http://tafr.si/ 
+
 ![](/images/uploads/black.png)
