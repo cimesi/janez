@@ -8,4 +8,6 @@ tags:
 ---
 In the beginning of 2017 we founded TAFR – multidisciplinary team of students with a goal to improve everyday work of farmers and vinegrowers with autonomous farming robots
 
+More on the official page: http://tafr.si/
+
 ![](/images/uploads/black.png)
