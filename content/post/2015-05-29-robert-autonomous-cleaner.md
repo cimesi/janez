@@ -12,7 +12,7 @@ Robert is a smart cleaning robot, which cleans by autonomously navigating using 
 
 ![](/robert2.png " ")
 
-Oh, and it’s also connected to Internet and can easily become another thing in the Internet of things.
+It’s connected to Internet and can easily become another thing in the Internet of things.
 
 ![](/robert3.png " ")
 
