@@ -2,7 +2,7 @@
 title: Cornstar - farming robot from university of Maribor
 date: 2016-07-30T20:26:43.728Z
 cover: /images/uploads/black.png
-draft: false
+draft: true
 tags:
   - autonomous
   - robot
