@@ -2,20 +2,17 @@
 title: About me
 draft: .nan
 ---
-Some notable bacground:
+**Some notable background:**
 
-* Cofounder of TAFR student team 
-* Ex lead of MakerLab Ljubljana 
-* An overall stand up guy :)
+* Co-Founder at TAFR robotics
+* Robotics engineer - specialisation in autonomous driving and navigation
 
-Tecnical Expertise:
+**Technical Expertise:**
 
 * Highly experienced with ROS and it’s simulation tools
-* Over 6 year work experience with autonomous robots (localisation and navigation algorithms
+* Over 6 year work experience with autonomous robots (localisation and navigation algorithms)
 * C++, Python, GIT
 * Fusion360, Blender, SolidWorks
-* CNC and 3D printer construction and usage experience
-
-
+* Higly experienced in work with CNCs and 3D printers 
 
 More on LinkedIn: https://www.linkedin.com/in/janez-cimerman-935305b1/
