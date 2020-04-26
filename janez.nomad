@@ -12,7 +12,7 @@ job "janez" {
     canary = 0
   }
 
-  group "janez2" {
+  group "janez" {
     count = 2
 
     restart {
@@ -22,7 +22,7 @@ job "janez" {
       mode = "fail"
     }
 
-    task "janez2" {
+    task "janez" {
       driver = "docker"
       config {
         image = "docker.io/cimesi/janez"
@@ -51,21 +51,39 @@ job "janez" {
       }
 
       service {
-        name = "janez2"
+        name = "janez"
         port = "http"
 
         tags = [
           "dns.enable=true",
-          "dns.record=janez2.cime.si",
+          "dns.record=janez.cime.si",
           "traefik.enable=true",
+          "traefik.http.routers.homepage-janez.entrypoints=http",
+          "traefik.http.routers.homepage-janez.rule=Host(`janez.cime.si`)",
+          "traefik.http.routers.homepage-janez.middlewares=homepage-janez",
+          "traefik.http.middlewares.homepage-janez.redirectscheme.scheme=https",
+          "traefik.http.routers.homepage-janez-https.entrypoints=https",
+          "traefik.http.routers.homepage-janez-https.rule=Host(`janez.cime.si`)",
+          "traefik.http.routers.homepage-janez-https.tls.certresolver=le-cime",
+          "traefik.http.routers.homepage-janez-https.tls.domains[0].main=janez.cime.si",
+          "traefik.http.routers.homepage-janez-https.middlewares=homepage-janez-https-404page",
+          "traefik.http.middlewares.homepage-janez-https-404page.errors.status=404",
+          "traefik.http.middlewares.homepage-janez-https-404page.errors.service=janez",
+          "traefik.http.middlewares.homepage-janez-https-404page.errors.query=/404.html",
+          # Redirect old page to new one
           "traefik.http.routers.homepage-janez2.entrypoints=http",
           "traefik.http.routers.homepage-janez2.rule=Host(`janez2.cime.si`)",
           "traefik.http.routers.homepage-janez2.middlewares=homepage-janez2",
-          "traefik.http.middlewares.homepage-janez2.redirectscheme.scheme=https",
+          "traefik.http.middlewares.homepage-janez2.redirectregex.regex=^http://janez2.cime.si/(.*)",
+          "traefik.http.middlewares.homepage-janez2.redirectregex.replacement=http://janez.cime.si",
           "traefik.http.routers.homepage-janez2-https.entrypoints=https",
           "traefik.http.routers.homepage-janez2-https.rule=Host(`janez2.cime.si`)",
           "traefik.http.routers.homepage-janez2-https.tls.certresolver=le-cime",
           "traefik.http.routers.homepage-janez2-https.tls.domains[0].main=janez2.cime.si",
+          "traefik.http.routers.homepage-janez2-https.middlewares=homepage-janez2-https",
+          "traefik.http.middlewares.homepage-janez2-https.redirectregex.regex=^https://janez2.cime.si/(.*)",
+          "traefik.http.middlewares.homepage-janez2-https.redirectregex.replacement=https://janez.cime.si"
+          
         ]
 
         check {
