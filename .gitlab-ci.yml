@@ -1,12 +1,21 @@
 ---
 
 build:
+  stage: build
   image: cimesi/janez:builder
-  variables:
-    NOMAD_ADDR: http://10.0.19.241:4646
   script:
     - make build
-    - docker login --password $REGISTRY_PASSWORD --username $REGISTRY_USERNAME
-    - make push
-    - sed -i -e "s/^# timestamp/$(date)/g" janez.nomad
-    - nomad job run janez.nomad
+  retry: 2
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+
+push:
+  stage: deploy
+  image: cimesi/janez:pusher
+  variables:
+    S3_SECRET_KEY: secret
+  script:
+    - make publish
+  retry: 2

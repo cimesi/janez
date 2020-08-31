@@ -1,14 +1,21 @@
-REGISTRY = cimesi/janez:latest
+REGISTRY ?= cimesi/janez
+S3_ENDPOINT ?= https://s3.canada.cime.si:9000
+S3_ACCESS_KEY ?= janez-static-page
+S3_SECRET_KEY ?= secret
+S3_BUCKET ?= janez-static-page
 
 run:
 	hugo server
 	
-run/container:
-	docker run -it --rm -p 8000:80 ${REGISTRY}
+image:
+	docker build -t ${REGISTRY}:builder --target builder .
+	docker build -t ${REGISTRY}:pusher --target pusher .
+	docker push ${REGISTRY}:builder
+	docker push ${REGISTRY}:pusher
 
 build:
 	hugo
-	docker build -t ${REGISTRY} .
 
-push:
-	docker push ${REGISTRY}
+publish:
+	mc config host add janez-static-page ${S3_ENDPOINT} ${S3_ACCESS_KEY} ${S3_SECRET_KEY}
+	mc cp --recursive public janez-static-page/${S3_BUCKET}
