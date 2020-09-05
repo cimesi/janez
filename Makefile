@@ -18,4 +18,5 @@ build:
 
 publish:
 	mc config host add janez-static-page ${S3_ENDPOINT} ${S3_ACCESS_KEY} ${S3_SECRET_KEY}
+	mc rm --recursive --force janez-static-page/${S3_BUCKET}
 	mc cp --recursive public janez-static-page/${S3_BUCKET}
