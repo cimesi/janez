@@ -10,4 +10,6 @@ In the beginning of 2017 we founded TAFR – multidisciplinary team of students 
 
 More on the official page: http://tafr.si/
 
+{{< youtube mIuLOYoFcE4 >}}
+
 ![](/images/uploads/black.png)
