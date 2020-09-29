@@ -8,3 +8,7 @@ tags:
 A video documentation of how we made the super black-mirror-y looking shell for [TAFR2 farming robot](http://tafr.si/en/). The wood was milled in multiple parts and glued together, the plastic was then vacuum formed on top of that.
 
 {{< youtube fka-c84OhV4 >}}
+
+
+
+{{< youtube e2Abf77EuXY >}}
