@@ -5,7 +5,7 @@ backend:
   repo: gregor/janez
   branch: master # Branch to update (optional; defaults to master)
   auth_type: implicit # Required for implicit grant
-  app_id: f114592102c5ab5c558108b668e28b1f58462a4d7c0cc8487083203de7f221af # Application ID from your GitLab settings
+  app_id: 3e9249b9b3250a1f25be1243ea1067ddcde94683e7300e966637858d999639d0 # Application ID from your GitLab settings
   api_root: https://git.cime.si/api/v4
   base_url: https://git.cime.si
   auth_endpoint: oauth/authorize
