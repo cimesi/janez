@@ -3,7 +3,7 @@ title: Oscilislope based audio visual synthesizer with LIDAR
 date: 2021-09-29T19:38:11.200Z
 draft: "false"
 tags:
-  - post
+  - bored
 ---
 Oscilislope based audio visual synthesizer expanded so you can control it with body movements. Here is what it looks like:
 
