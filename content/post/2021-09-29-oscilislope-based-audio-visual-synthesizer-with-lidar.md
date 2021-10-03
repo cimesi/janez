@@ -7,7 +7,11 @@ tags:
 ---
 Oscilislope based audio visual synthesizer expanded so you can control it with body movements. I connected opensource project Phosphorm (based on openFrameworks) with ROS and a LIDAR sensor through a MIDI iterface. It all runs on RPi3.
 
-The fork is opensourced here: https://github.com/JanezCim/phosphorm
+The fork is opensourced here: 
+
+https://github.com/JanezCim/phosphorm
+
+https://github.com/JanezCim/lidar_midi
 
 {{< youtube 1YFioy4-LDs >}}
 
