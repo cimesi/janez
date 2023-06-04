@@ -5,6 +5,9 @@ backend:
   repo: cimesi/janez
   branch: main
   auth_type: implicit # Required for implicit grant
+  app_id: b3b3656bc6def485d590
+  site_domain: janez.cime.si
+  base_url: https://janez.cime.si
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
