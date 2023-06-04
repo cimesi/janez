@@ -1,14 +1,10 @@
 ---
 
 backend:
-  name: gitlab
-  repo: gregor/janez
-  branch: master # Branch to update (optional; defaults to master)
+  name: github
+  repo: cimesi/janez
+  branch: main
   auth_type: implicit # Required for implicit grant
-  app_id: 3e9249b9b3250a1f25be1243ea1067ddcde94683e7300e966637858d999639d0 # Application ID from your GitLab settings
-  api_root: https://git.cime.si/api/v4
-  base_url: https://git.cime.si
-  auth_endpoint: oauth/authorize
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
